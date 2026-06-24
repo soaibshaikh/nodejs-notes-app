@@ -16,6 +16,20 @@ const writeNotes = (data) => {
   fs.writeFileSync(FILE, JSON.stringify(data, null, 2));
 };
 
+//start page
+app.get("/", (req, res) => {
+  res.json({
+    message: "Notes API running 🚀",
+    endpoints: {
+      getAll: "/notes",
+      create: "POST /notes",
+      getOne: "/notes/:id",
+      update: "PUT /notes/:id",
+      delete: "DELETE /notes/:id"
+    }
+  });
+});
+
 // CREATE
 app.post("/notes", (req, res) => {
   const notes = readNotes();
