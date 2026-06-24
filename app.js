@@ -19,7 +19,7 @@ const writeNotes = (data) => {
 //start page
 app.get("/", (req, res) => {
   res.json({
-    message: "Notes API running 🚀",
+    message: "Altnix Notes API running 🚀",
     endpoints: {
       getAll: "/notes",
       create: "POST /notes",
