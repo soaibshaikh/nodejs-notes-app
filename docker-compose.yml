@@ -1,6 +1,6 @@
 services:
   notes-app:
-    build: .
+    build: soaibshaikh/node-notes-app:latest
     ports:
       - "3000:3000"
     image: node-notes-app
