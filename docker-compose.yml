@@ -3,5 +3,5 @@ services:
     build: .
     ports:
       - "3000:3000"
-    image: notes-app
+    image: node-notes-app
     container_name: notes-app-container
