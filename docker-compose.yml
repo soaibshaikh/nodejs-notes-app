@@ -1,6 +1,6 @@
 services:
   notes-app:
-    build: .
+    build: notes-app
     ports:
       - "3000:3000"
-    container_name: notes-container
+    container_name: notes-app-container
