@@ -1,7 +1,6 @@
 services:
   notes-app:
-    build: soaibaltech/node-notes-app:latest
+    image: soaibaltech/node-notes-app:latest
     ports:
       - "3000:3000"
-    image: node-notes-app
     container_name: notes-app-container
